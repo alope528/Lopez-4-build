@@ -12,14 +12,14 @@ body {
     margin: 0;
     background-color: LightGoldenRodYellow;
     color: black;
-    font-family:'EB Garamond', 'Times New Roman', serif;
+    font-family: Arial, serif;
     
 }
 
 header, main, footer {
     grid-column: 1 / -1;
     padding: 1rem;
-    font-family: Monserrat, 'Arial', sans-serif;
+    font-family: Montserrat, 'Arial', sans-serif;
     
 }
 section {
@@ -37,11 +37,9 @@ footer {
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     gap:1rem;
-
     background-color: SlateGray;
     padding: 1rem;
     list-style: none;
@@ -62,7 +60,7 @@ header {
     margin-bottom: 2rem;
 }
 h1,h2,h3 {
-    font-family: Brush Script MT, 'Arial', sans-serif;
+    font-family: Brush Script MT, cursive, sans-serif;
     color: black;
     font-size: 2rem;
     text-shadow: 1px 1px 5px gold;
@@ -74,7 +72,7 @@ p {
 }
 
 .card-row {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
@@ -112,3 +110,23 @@ nav a:hover {
     background-color: black;
     color: white;
 }
+
+
+@media (min-width: 768px) {
+ 
+nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+.card {
+    flex:1;
+}
+
+    header, main, footer {
+        padding:2rem;
+    }
+
+ 
+}
+
